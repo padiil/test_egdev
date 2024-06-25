@@ -1,33 +1,69 @@
-
 .bg-primary {
-    background-color: #212E61 !important;
+  background-color: #212e61 !important;
 }
 
 .bg-secondary {
-    background-color: #F19A37 !important;
+  background-color: #f19a37 !important;
 }
 
 .btn-secondary {
-    background-color: #F19A37 !important;
-    border-color: #F19A37 !important;
+  background-color: #f19a37 !important;
+  border-color: #f19a37 !important;
+}
+.text-secondary {
+  color: #f19a37 !important;
 }
 
 .pding {
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-bottom: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 100px;
 }
 
 .foto_profil {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .icon_footer {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.logo_turnedin {
+  width: 55px;
+}
+
+.nama_turnedin {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text_grey {
+  color: #6c757d;
 }
 
 #gambar_apasih {
-    margin-top: -95px;
+  margin-top: -95px;
+  width: 200px;
+  height: auto;
+  margin-right: 100px;
+}
+
+#floating_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 5px;
+}
+
+#img_float {
+  width: 35px;
+  height: 35px;
+}
+
+#gambar_wa {
+    width: 35px;
+    height: 35px;
 }
