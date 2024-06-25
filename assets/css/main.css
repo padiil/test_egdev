@@ -1,0 +1,33 @@
+
+.bg-primary {
+    background-color: #212E61 !important;
+}
+
+.bg-secondary {
+    background-color: #F19A37 !important;
+}
+
+.btn-secondary {
+    background-color: #F19A37 !important;
+    border-color: #F19A37 !important;
+}
+
+.pding {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 100px;
+}
+
+.foto_profil {
+    width: 50px;
+    height: 50px;
+}
+
+.icon_footer {
+    width: 20px;
+    height: 20px;
+}
+
+#gambar_apasih {
+    margin-top: -95px;
+}
