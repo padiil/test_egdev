@@ -14,12 +14,6 @@
   color: #f19a37 !important;
 }
 
-.pding {
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-bottom: 100px;
-}
-
 .foto_profil {
   width: 50px;
   height: 50px;
@@ -30,24 +24,46 @@
   height: 20px;
 }
 
-.logo_turnedin {
-  width: 55px;
-}
-
-.nama_turnedin {
-  font-size: 20px;
-  font-weight: bold;
-}
-
 .text_grey {
   color: #6c757d;
 }
 
-#gambar_apasih {
-  margin-top: -95px;
-  width: 200px;
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.carousel_indicator {
+  bottom: -50px;
+}
+
+.carousel_indicator button {
+  background-color: #6d6d6d !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.carousel_indicator button.active {
+  background-color: #4337f1 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.count {
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: -15px;
+  background-color: rgb(165, 165, 165);
+}
+
+#img_logo {
+  width: 50px;
   height: auto;
-  margin-right: 100px;
+}
+
+#img_info {
+  margin-top: -95px;
 }
 
 #floating_button {
@@ -67,3 +83,12 @@
     width: 35px;
     height: 35px;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #img_info {
+    width: 200px;
+    margin-top: -130px;    
+  }
+} 
