@@ -21,33 +21,36 @@
                 alt="Logo"
                 id="img_logo"
                 class="my-auto"
-                style="width: 18%;
-                height: 18%;"
+                style="width: 18%; height: 18%"
               />
               <h5 class="card-title my-auto">Turned In</h5>
             </div>
-            <form>
+            <form method="post" action="http://192.168.18.12:3000/login">
               <div class="form-group">
                 <div class="my-3">
-                  <label for="phoneNumber">Nomor HP</label>
+                  <label for="username">Username</label>
                   <input
+                    id="username"
+                    name="username"
                     type="text"
                     class="form-control"
-                    placeholder="6282..."
+                    placeholder="Username"
                   />
                 </div>
                 <div class="my-3">
-                    <label for="phoneNumber">Password</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="***"
-                    />
-                  </div>
+                  <label for="password">Password</label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    class="form-control"
+                    placeholder="***"
+                  />
+                </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-block">
+              <div type="submit" class="btn btn-primary btn-block" onclick="LOGIN()">
                 Login
-              </button>
+              </div>
               <div class="text-center mt-3 border-bottom pb-2">
                 <a href="#">Login dengan OTP</a>
               </div>
@@ -63,5 +66,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/login.js"></script>
   </body>
 </html>
