@@ -43,18 +43,18 @@
 
 // testimoni
 (() => {
-    const testiArea = document.getElementById("testi-area");
-    let dataTestimoni = [];
-  
-    fetch("http://192.168.18.12:3000/testimoni", {
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then((hasil) => {
-        dataTestimoni = hasil;
-        for (let i = 0; i < hasil.length; i++) {
-          if (hasil[i].status === "active") {
-            testiArea.innerHTML += `
+  const testiArea = document.getElementById("testi-area");
+  let dataTestimoni = [];
+
+  fetch("http://192.168.18.12:3000/testimoni", {
+    method: "GET",
+  })
+    .then((response) => response.json())
+    .then((hasil) => {
+      dataTestimoni = hasil;
+      for (let i = 0; i < hasil.length; i++) {
+        if (hasil[i].status === "active") {
+          testiArea.innerHTML += `
                   <div class="card shadow style">
                             <div class="card-body">
                               <div
@@ -79,8 +79,8 @@
                             </div>
                           </div>
                   `;
-          }
         }
-      });
-  })();
+      }
+    });
+})();
 // testimoni end
