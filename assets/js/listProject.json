@@ -1,0 +1,72 @@
+[
+  {
+    "fotoProfil": "https://turnedin.id/images/default.jpeg",
+    "nama": "Dr. Andi",
+    "judul": "Jasa Bimbingan Skripsi",
+    "harga": "Rp 100.000 - Rp 200.000",
+    "penawaran": {
+      "penawar": "5",
+      "hargaPenawaran": "Rp 150.000"
+    },
+    "deskripsi": "Bimbingan skripsi untuk mahasiswa dari berbagai jurusan",
+    "badge": ["Skripsi", "Bimbingan", "Akademik"],
+    "status": "Open",
+    "tanggal": "2 minggu yang lalu"
+  },
+  {
+    "fotoProfil": "https://turnedin.id/images/default.jpeg",
+    "nama": "Prof. Siti",
+    "judul": "Kursus Matematika",
+    "harga": "Rp 50.000 - Rp 100.000",
+    "penawaran": {
+      "penawar": "0",
+      "hargaPenawaran": "Rp 75.000"
+    },
+    "deskripsi": "Kursus matematika untuk siswa SMP dan SMA",
+    "badge": ["Matematika", "Kursus", "Akademik"],
+    "status": "Open",
+    "tanggal": "1 bulan yang lalu"
+  },
+  {
+    "fotoProfil": "https://turnedin.id/images/default.jpeg",
+    "nama": "Ir. Budi",
+    "judul": "Les Privat Fisika",
+    "harga": "Rp 80.000 - Rp 120.000",
+    "penawaran": {
+      "penawar": "4",
+      "hargaPenawaran": "Rp 100.000"
+    },
+    "deskripsi": "Les privat fisika untuk siswa SMA dan persiapan SBMPTN",
+    "badge": ["Fisika", "Les Privat", "Akademik"],
+    "status": "Open",
+    "tanggal": "3 minggu yang lalu"
+  },
+  {
+    "fotoProfil": "https://turnedin.id/images/default.jpeg",
+    "nama": "Dr. Rina",
+    "judul": "Bimbingan Tesis",
+    "harga": "Rp 200.000 - Rp 300.000",
+    "penawaran": {
+      "penawar": "0",
+      "hargaPenawaran": "Rp 250.000"
+    },
+    "deskripsi": "Bimbingan tesis untuk mahasiswa magister dari berbagai jurusan",
+    "badge": ["Tesis", "Bimbingan", "Akademik"],
+    "status": "Open",
+    "tanggal": "1 bulan yang lalu"
+  },
+  {
+    "fotoProfil": "https://turnedin.id/images/default.jpeg",
+    "nama": "Ms. Yulia",
+    "judul": "Kursus Bahasa Inggris",
+    "harga": "Rp 70.000 - Rp 130.000",
+    "penawaran": {
+      "penawar": "2",
+      "hargaPenawaran": "Rp 100.000"
+    },
+    "deskripsi": "Kursus Bahasa Inggris untuk siswa SMP, SMA, dan umum",
+    "badge": ["Bahasa Inggris", "Kursus", "Akademik"],
+    "status": "Open",
+    "tanggal": "2 minggu yang lalu"
+  }
+]
