@@ -87,7 +87,8 @@
                     <div
                       class="card mx-1 my-4 bg-body-tertiary rounded-4 shadow"
                     >
-                      <div class="card-body">
+                      <div class="card-body" id="dropArea">
+                        <input type="file" name="" id="fileInput" />
                         <!-- button -->
                         <div class="d-flex justify-content-end m-1">
                           <button class="btn btn-primary mx-1">
@@ -99,13 +100,24 @@
                         </div>
                         <!-- input -->
                         <div class="text-center m-5 fw-bold">
-                          <h5 class="fw-bold card-title mb-4">
-                            Cek Turnitin No-Repository
-                          </h5>
-                          <small class="card-text">
-                            TARIK FILE MU KESINI / KLIK AJA DISINI <br />
-                            .docx .pdf aja ya
-                          </small>
+                          <!-- file desc -->
+                          <div
+                            class="row p-3 justify-content-start d-none"
+                            id="fileList"
+                          >
+                            <div class="card-title" id="titleProduct"></div>
+                          </div>
+                          <!-- file desc end -->
+
+                          <div id="titleProductText">
+                            <h5 class="fw-bold card-title mb-4">
+                              Cek Turnitin No-Repository
+                            </h5>
+                            <small class="card-text">
+                              TARIK FILE MU KESINI / KLIK AJA DISINI <br />
+                              .docx .pdf aja ya
+                            </small>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -125,8 +137,8 @@
                         <input
                           class="form-check-input"
                           type="checkbox"
-                          value=""
-                          id="flexCheckDefault"
+                          value="true"
+                          id="kutipan"
                         />
                         <label class="form-check-label" for="flexCheckDefault">
                           Kecualikan Kutipan
@@ -137,7 +149,7 @@
                           class="form-check-input"
                           type="checkbox"
                           value=""
-                          id="flexCheckDefault"
+                          id="daftarPustaka"
                         />
                         <label class="form-check-label" for="flexCheckDefault">
                           Kecualikan Daftar Pustaka
@@ -148,11 +160,57 @@
                           class="form-check-input"
                           type="checkbox"
                           value=""
-                          id="flexCheckDefault"
+                          id="sumberKurangDari"
                         />
                         <label class="form-check-label" for="flexCheckDefault">
                           Kecualikan sumber yang kurang dari ...
                         </label>
+                        <!-- radio start -->
+                        <div id="radioKecuali" class="d-none">
+                          <!-- words -->
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="radioWords"
+                              value="words"
+                              checked
+                            />
+                            <div class="d-flex align-items-center gap-2">
+                              <input
+                                type="number"
+                                name=""
+                                class="form-control rounded-5 w-50"
+                                id="valueWords"
+                                min="1"
+                              />
+                              words
+                            </div>
+                          </div>
+                          <!-- percentage -->
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="exampleRadios"
+                              id="radioPersen"
+                              value="persen"
+                            />
+                            <div class="d-flex align-items-center gap-2">
+                              <input
+                                type="number"
+                                name=""
+                                class="form-control rounded-5 w-50"
+                                id="valuePersen"
+                                min="1"
+                              />
+                              %
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- radio end -->
                       </div>
                     </div>
                   </div>
@@ -173,7 +231,7 @@
                               class="mx-2"
                             />
 
-                            <input type="number" class="form-control" />
+                            <input id="whatsApp" type="number" class="form-control" />
                           </div>
 
                           <div class="form-check">
@@ -199,9 +257,9 @@
                             >Referral Code (Opsional)</label
                           >
                           <input
-                            type="password"
+                            type="text"
                             class="form-control"
-                            id="exampleInputPassword1"
+                            id="referral"
                           />
                         </div>
                       </form>
@@ -214,6 +272,8 @@
                         type="button"
                         class="btn btn-secondary fw-bold"
                         disabled="true"
+                        id="submit_button"
+                        onclick="uploadFile()"
                       >
                         SUBMIT
                       </button>
@@ -349,5 +409,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- bootsrtap end -->
+
+    <script src="/assets/js/upload.js"></script>
   </body>
 </html>
