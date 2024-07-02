@@ -50,15 +50,13 @@
               <div
                 class="handleUserLoginMobile nav-item mt-2 mt-lg-0 d-block d-lg-none"
               >
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
+                <button class="btn btn-success" type="submit">Login</button>
               </div>
             </ul>
           </div>
 
           <div class="nav-item mt-2 mt-lg-0 d-block d-none d-lg-block">
-            <button class="btn btn-sm btn-success fz-12 ms-md-3">Login</button>
+            <button class="btn btn-sm btn-success ms-md-3">Login</button>
           </div>
         </div>
       </nav>
@@ -72,20 +70,20 @@
     </header>
 
     <!-- main -->
-    <main>
+    <main class="mt-3 mt-md-5 mb-md-5 pb-3 pb-md-5 mx-auto">
       <!-- card -->
       <div class="container my-5">
         <!-- main card -->
         <div class="row">
           <div class="col">
-            <div class="card w-75 m-auto">
-              <div class="card-body">
+            <div class="card w-75 mx-auto border-0 shadow rounded-4 mb-5">
+              <div class="card-body ">
                 <h5 class="card-title fw-bold">CEK TURNITIN NO-REPOSITORY</h5>
                 <!-- upload -->
                 <div class="row">
                   <div class="w-100 px-4">
                     <div
-                      class="card mx-1 my-4 bg-body-tertiary rounded-4 shadow"
+                      class="card mx-1 my-4 bg-body-tertiary border-0 rounded-4 shadow"
                     >
                       <div class="card-body" id="dropArea">
                         <input type="file" name="" id="fileInput" />
@@ -129,7 +127,7 @@
                   <!-- 1 -->
                   <div class="col mx-3 mx-md-4">
                     <div class="px-4">
-                      <h6 class="fw-bold">
+                      <h6 class="fw-bold fz-12">
                         1. Filter pilihh aja sesuaii kebutuhan yaa
                       </h6>
                       <!-- checkbox -->
@@ -140,7 +138,7 @@
                           value="true"
                           id="kutipan"
                         />
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label fz-14" for="flexCheckDefault">
                           Kecualikan Kutipan
                         </label>
                       </div>
@@ -151,7 +149,7 @@
                           value=""
                           id="daftarPustaka"
                         />
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label fz-14" for="flexCheckDefault">
                           Kecualikan Daftar Pustaka
                         </label>
                       </div>
@@ -162,7 +160,7 @@
                           value=""
                           id="sumberKurangDari"
                         />
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label fz-14" for="flexCheckDefault">
                           Kecualikan sumber yang kurang dari ...
                         </label>
                         <!-- radio start -->
@@ -181,7 +179,7 @@
                               <input
                                 type="number"
                                 name=""
-                                class="form-control rounded-5 w-50"
+                                class="form-control rounded-5 w-50 fz-14"
                                 id="valueWords"
                                 min="1"
                               />
@@ -201,7 +199,7 @@
                               <input
                                 type="number"
                                 name=""
-                                class="form-control rounded-5 w-50"
+                                class="form-control rounded-5 w-50 fz-14"
                                 id="valuePersen"
                                 min="1"
                               />
@@ -216,9 +214,9 @@
                   </div>
 
                   <!-- 2 -->
-                  <div class="col mx-3 mx-md-4">
+                  <div class="col mx-3 mx-md-4 fz-14">
                     <div class="px-4">
-                      <h6 class="fw-bold">
+                      <h6 class="fw-bold fz-14">
                         2. Isi Nomer Whatsapp kamu buat ngirim hasilnya
                       </h6>
                       <form>
@@ -231,7 +229,11 @@
                               class="mx-2"
                             />
 
-                            <input id="whatsApp" type="number" class="form-control" />
+                            <input
+                              id="whatsApp"
+                              type="number"
+                              class="form-control"
+                            />
                           </div>
 
                           <div class="form-check">
@@ -291,31 +293,31 @@
         </div>
       </div>
 
-      <!-- info -->
-      <div class="row">
+     <!-- info start-->
+     <div class="row my-5">
+      <div
+        class="col-12 d-flex flex-column align-items-center mt-5 mb-4 pt-5 pt-md-0 pb-4 bg-primary text-white px-0 w-100"
+      >
         <div
-          class="col-12 d-flex flex-column align-items-center mt-5 mb-4 pt-5 pt-md-0 pb-4 bg-primary text-white px-0 w-100"
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-center p-0"
         >
-          <div
-            class="container d-flex flex-column flex-md-row align-items-center justify-content-center gap-5 p-0"
-          >
-            <div>
-              <img
-                id="img_info"
-                src="https://turnedin.id/img/logo/1714118445603.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <h2 class="fw-bold">Apasih Turned In tuh</h2>
-              <p>
-                Turnedin adalah layanan cek plagiasi otomatis berbasis turnitin
-                <span class="fw-bold">PERTAMA</span> di Indonesia!!
-              </p>
-            </div>
+          <div>
+            <img
+              id="img_info"
+              src="https://turnedin.id/img/logo/1714118445603.png"
+              alt=""
+            />
+          </div>
+          <div style="width: 50%;" class="mx-5">
+            <h2 class="fw-bold text-center">Cek Plagiasi Turnitin itu apa sih?</h2>
+            <p >
+              Turned In adalah layanan cek plagiasi otomatis yang terintegrasi langsung dengan Turnitin sehingga bisa mendeteksi tingkat plagiasi pada dokumen kamu
+            </p>
           </div>
         </div>
       </div>
+    </div>
+    <!-- info end -->
 
       <!-- Alasan -->
       <div class="row">
@@ -326,9 +328,11 @@
             class="d-flex flex-column align-items-center justify-content-center"
           >
             <div class="top text-center">
-              <h4 class="fw-semibold text-center">Biar apa pake Turned In?</h4>
-              <h6 class="fz-14 fw-semibold text-secondary">
-                Biar apa pake Turned In?
+              <h4 class="fw-semibold text-center">
+                Emang kenapa harus Turned In?
+              </h4>
+              <h6 class="fw-semibold text-secondary">
+                Harus dong, gausah ditanya
               </h6>
             </div>
           </div>
@@ -336,8 +340,8 @@
       </div>
     </main>
 
-    <!-- footer -->
-    <footer>
+     <!-- footer start-->
+     <footer>
       <div
         class="navbar navbar-expand-lg pt-4 pb-5 pb-md-4 px-3 mb-0 mt-auto bg-primary"
       >
@@ -353,10 +357,12 @@
             >
           </div>
 
-          <div class="nav-item mt-2 mt-lg-0 d-block">
+          <div
+            class="nav-item mt-2 mt-lg-0 d-block d-flex justify-content-lg-end"
+          >
             <!-- card -->
-            <small class="d-flex">
-              <div class="card mx-1 rounded-3">
+            <small class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <div class="card m-1 rounded-3">
                 <div class="card-body p-1 d-flex">
                   <img
                     class="icon_footer"
@@ -367,7 +373,7 @@
                 </div>
               </div>
 
-              <div class="card mx-1 rounded-3">
+              <div class="card m-1 rounded-3">
                 <div class="card-body p-1 d-flex">
                   <img
                     class="icon_footer"
@@ -378,7 +384,7 @@
                 </div>
               </div>
 
-              <div class="card mx-1 rounded-3">
+              <div class="card m-1 rounded-3">
                 <div class="card-body p-1 d-flex">
                   <img
                     class="icon_footer"
@@ -399,9 +405,14 @@
         type="button"
         class="btn btn-secondary floating-btn rounded-3"
       >
-        <img id="img_float" src="https://turnedin.id/img/logo/cs.png" alt="" />
+        <img
+          id="img_float"
+          src="https://turnedin.id/img/logo/cs.png"
+          alt=""
+        />
       </button>
     </footer>
+    <!-- footer end -->
 
     <!-- bootsrtap -->
     <script
