@@ -13,8 +13,6 @@ const referral = document.querySelector("#referral");
 const radioWords = document.querySelector("#radioWords");
 const radioPersen = document.querySelector("#radioPersen");
 
-console.log(valueKecuali.value)
-
 sumberKurangDari.addEventListener("change", () => {
   if (sumberKurangDari.checked) {
     radioKecuali.classList.remove("d-none");
@@ -39,7 +37,15 @@ dropArea.addEventListener("drop", (e) => {
   dropArea.classList.remove("dragover");
 
   const files = e.dataTransfer.files;
+  handleFiles(files);
+});
 
+fileInput.addEventListener("change", (e) => {
+  const files = e.target.files;
+  handleFiles(files);
+});
+
+function handleFiles(files) {
   fileList.innerHTML = ""; // Clear previous file list
   for (let i = 0; i < files.length; i++) {
     const fileItem = document.createElement("div");
@@ -50,25 +56,27 @@ dropArea.addEventListener("drop", (e) => {
   fileList.classList.remove("d-none");
   titleProductText.classList.add("d-none");
   submitButton.removeAttribute("disabled");
-});
+}
 
 // upload file cek turnitin
 function uploadFile() {
+  const files = fileInput.files;
   const fileNames = [];
-  for (let i = 0; i < fileInput.files.length; i++) {
-    fileNames.push(fileInput.files[i].name);
+  for (let i = 0; i < files.length; i++) {
+    fileNames.push(files[i].name);
   }
-
 
   const data = {
     title: titleProduct.value,
     fileNames: fileNames,
     kutipan: kutipan.checked,
     daftarPustaka: daftarPustaka.checked,
-    sumberKurangDari: {
-      type: radioKecuali.querySelector("input:checked").value,
-      value: valueKecuali.value,
-    },
+    sumberKurangDari: sumberKurangDari.checked
+      ? {
+          type: radioKecuali.querySelector("input:checked").value,
+          value: document.querySelector("#value" + radioKecuali.querySelector("input:checked").value.charAt(0).toUpperCase() + radioKecuali.querySelector("input:checked").value.slice(1)).value,
+        }
+      : null,
     whatsApp: whatsApp.value,
     referral: referral.value,
   };

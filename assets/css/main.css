@@ -66,7 +66,24 @@
   font-size: 14px;
 }
 
-input[type="file"] {
+.fz-12 {
+  font-size: 12px;
+}
+
+.active-custom {
+  background-color: #212e61 !important;
+  color: white !important;
+}
+
+#submit_button:hover {
+  background-color: #fa8c0e !important;
+}
+
+#submit_button:active {
+  background-color: #9e621d !important;
+}
+
+#fileInput {
   display: none;
 }
 
@@ -76,7 +93,8 @@ input[type="file"] {
 }
 
 #img_info {
-  margin-top: -95px;
+  margin-top: -75px;
+  width: 200px;
 }
 
 #floating_button {

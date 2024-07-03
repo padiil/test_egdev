@@ -112,14 +112,15 @@
         ) {
           listProject[i].penawaran = `
             <h6
-                                          class="fw-bold mb-0 px-3 mb-lg-2 me-2 me-lg-0"
+                                          class=" fz-12 mb-0 px-md-3 mb-lg-2 me-2 me-lg-0"
                                         >
                                           Belum ada penawaran
                                         </h6>
            `;
         } else {
           listProject[i].penawaran = `
-            <h6
+                                    <div class="d-none d-md-block">
+                                      <h6
                                           class="fw-400 mb-0 px-3 mb-lg-2 me-2 me-lg-0"
                                         >
                                           ${listProject[i].penawaran.penawar} Penawaran
@@ -135,6 +136,11 @@
                                             Penawaran rata-rata
                                           </div>
                                         </div>
+                                    </div>
+                                    <div class="d-md-none fz-12">
+                                      <p>${listProject[i].penawaran.penawar} Penawaran dengan rata-rata penawaran <strong>${listProject[i].penawaran.hargaPenawaran}</strong></p>
+                                    </div>
+                                        
            `;
         }
 
@@ -170,7 +176,7 @@
                                     <h6 class="fw-semibold">${
                                       listProject[i].judul
                                     }</h6>
-                               Search     <p class="d-block fw-semibold" style="font-size: smaller;">
+                               <p class="d-block fw-semibold" style="font-size: smaller;">
                                       Anggaran ${listProject[i].harga}
                                     </p>
                                   </div>
@@ -207,9 +213,15 @@
                                     ${listProject[i].badge.join("")}
                                   </div>
                                    <div class="d-md-none text-nowrap">
-                                    <p class="m-auto" style="font-size: 12px;">${listProject[i].tanggal}</p>
+                                    <p class="m-auto" style="font-size: 12px;">${
+                                      listProject[i].tanggal
+                                    }</p>
                                   </div>
+                                  
                                 </div>
+                                <div class="mt-3 d-md-none">${
+                                  listProject[i].penawaran
+                                }</div>
                               </div>
 
                               <hr class="d-md-none" />
