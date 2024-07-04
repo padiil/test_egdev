@@ -1,0 +1,125 @@
+.bg-primary {
+  background-color: #212e61 !important;
+}
+
+.bg-secondary {
+  background-color: #f19a37 !important;
+}
+
+.btn-primary {
+  background-color: #212e61 !important;
+  border-color: #212e61 !important; 
+}
+
+.btn-secondary {
+  background-color: #f19a37 !important;
+  border-color: #f19a37 !important;
+}
+.text-secondary {
+  color: #f19a37 !important;
+}
+
+.foto_profil {
+  width: 50px;
+  height: 50px;
+}
+
+.icon_footer {
+  width: 20px;
+  height: 20px;
+}
+
+.text_grey {
+  color: #6c757d;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.carousel_indicator {
+  bottom: -50px;
+}
+
+.carousel_indicator button {
+  background-color: #6d6d6d !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.carousel_indicator button.active {
+  background-color: #4337f1 !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.count {
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: -15px;
+  background-color: rgb(165, 165, 165);
+}
+
+.fz-14 {
+  font-size: 14px;
+}
+
+.fz-12 {
+  font-size: 12px;
+}
+
+.active-custom {
+  background-color: #212e61 !important;
+  color: white !important;
+}
+
+#submit_button:hover {
+  background-color: #fa8c0e !important;
+}
+
+#submit_button:active {
+  background-color: #9e621d !important;
+}
+
+#fileInput {
+  display: none;
+}
+
+#img_logo {
+  width: 50px;
+  height: auto;
+}
+
+#img_info {
+  margin-top: -75px;
+  width: 200px;
+}
+
+#floating_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 5px;
+}
+
+#img_float {
+  width: 35px;
+  height: 35px;
+}
+
+#gambar_wa {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #img_info {
+    width: 200px;
+    margin-top: -130px;    
+  }
+} 
