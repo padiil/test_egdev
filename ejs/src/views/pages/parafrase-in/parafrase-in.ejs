@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head start-->
+  <%- include('../../partials/head.ejs') %>
+  <!-- head end -->
+
+  <body>
+    <!-- header start-->
+    <%- include('../../partials/header.ejs') %>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="my-3 mt-md-5 mb-md-5 pb-3 pb-md-5 mx-auto">
+      <!-- card -->
+      <div class="container my-5">
+        <!-- main card -->
+        <div class="row justify-content-center">
+          <div class="col col-lg-9">
+            <div class="card mx-auto border-0 shadow rounded-4 mb-5 lg">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">JASA PARAFRASE</h5>
+                <!-- upload -->
+                <div class="row mb-2">
+                  <!-- 1 file turnitin -->
+                  <div class="col">
+                    <div class="w-100">
+                      <div
+                        class="card mx-1 my-4 bg-body-tertiary rounded-4 shadow border-0"
+                      >
+                        <div class="card-body">
+                          <!-- input -->
+                          <div class="text-center m-3 m-md-5 fw-bold">
+                            <h5 class="fw-bold card-title mb-4">
+                              Upload File Turnitin
+                            </h5>
+                            <small class="card-text"> file pdf turnitin </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2 file docx -->
+                  <div class="col">
+                    <div class="col">
+                      <div class="w-100">
+                        <div
+                          class="card mx-1 my-4 bg-body-tertiary rounded-4 shadow border-0"
+                        >
+                          <div class="card-body">
+                            <!-- input -->
+                            <div class="text-center m-3 m-md-5 fw-bold">
+                              <h5 class="fw-bold card-title mb-4">
+                                Upload File Docx
+                              </h5>
+                              <small class="card-text"> file docx </small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- text -->
+                <div class="row">
+                  <!-- 1 -->
+                  <div class="col mx-3 mx-md-4 fz-14">
+                    <div>
+                      <h6 class="fw-bold fz-14">1. Isi info tambahannya yaa</h6>
+
+                      <!-- input -->
+                      <div>
+                        <form>
+                          <!-- deadline -->
+                          <div class="d-flex flex-column my-2">
+                            <label for="deadline">Deadline</label>
+                            <input
+                              type="datetime-local"
+                              name="deadline"
+                              id="deadline"
+                              class="rounded border-1 bg-body-tertiary"
+                            />
+                          </div>
+                          <!-- percentage -->
+                          <div class="d-flex flex-column my-2">
+                            <label for="persen"
+                              >Mau nurunin ke berapa persen</label
+                            >
+                            <div>
+                              <input
+                                type="number"
+                                name="persen"
+                                id="persen"
+                                placeholder="contoh: 20"
+                                class="rounded border-1 bg-body-tertiary w-50"
+                              />
+                              <span class="mx-2">%</span>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr class="my-3 d-md-none" />
+                  <hr class="d-none d-md-block vr gx-0" />
+
+                  <!-- 2 -->
+                  <div class="col mx-3 mx-md-4 fz-14">
+                    <div>
+                      <h6 class="fw-bold fz-14">
+                        2. Isi Nomer Whatsapp kamu buat ngirim hasilnya
+                      </h6>
+                      <form>
+                        <div class="mb-3">
+                          <div class="d-flex">
+                            <img
+                              src="https://banner2.cleanpng.com/20240205/cwl/transparent-whatsapp-logo-green-circle-with-white-arrow-and-whatsapp-1710885977271.webp"
+                              alt=""
+                              id="gambar_wa"
+                              class="mx-2 my-auto"
+                              style="width: 25px; height: 25px"
+                            />
+
+                            <input type="number" class="form-control" />
+                          </div>
+                        </div>
+                        <div class="mb-3 d-flex flex-column">
+                          <label for="catatan">catatan</label>
+                          <textarea
+                            name="catatan"
+                            id="catatan"
+                            placeholder="Contoh: kata-katanya yang nyambung ya min"
+                            class="rounded border-1"
+                          ></textarea>
+
+                          <p class="form-label my-2">
+                            <span class="fw-bold my-0">Jumlah: </span>
+                            <span class="mx-2">Rp 0</span>
+                            <span class="btn badge rounded-pill disabled" style="color: white; background-color: gray;">Tawar</span>
+                          </p>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-center my-md-5">
+                  <button
+                    type="button"
+                    class="btn btn-secondary fw-bold"
+                    disabled="true"
+                  >
+                    AJUKAN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- info start-->
+      <div class="row my-5">
+        <div
+          class="col-12 d-flex flex-column align-items-center mt-5 mb-4 pt-5 pt-md-0 pb-4 bg-primary text-white px-0 w-100"
+        >
+          <div
+            class="col col-lg-10 col-xl-7 d-flex flex-column flex-md-row align-items-center justify-content-center p-0 mx-md-5 px-md-5"
+          >
+            <div>
+              <img
+                id="img_info"
+                src="https://turnedin.id/img/logo/1714118445603.png"
+                alt=""
+              />
+            </div>
+            <div class="mt-5 mx-4 mx-lg-5">
+              <h2 class="fw-bold text-center">Parafrase In itu apa sih?</h2>
+              <p class="text-center">
+                Parafrase adalah kegiatan mengungkapkan ulang sebuah teks atau
+                gagasan dengan menggunakan kata-kata yang berbeda namun tetap
+                mempertahankan makna aslinya. Hal ini dilakukan untuk
+                menjelaskan atau menggambarkan suatu konsep atau informasi
+                secara lebih jelas atau dengan gaya yang berbeda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- info end -->
+
+      <!-- Alasan start-->
+      <div class="row my-5">
+        <div
+          class="col-12 d-flex flex-column align-items-center mt-2 mt-md-5 mb-md-4 pt-md-5 pb-4 px-0"
+        >
+          <div
+            class="d-flex flex-column align-items-center justify-content-center"
+          >
+            <div class="top text-center">
+              <h4 class="fw-semibold text-center">Biar apa pake Parafrase</h4>
+              <h6 class="fz-14 fw-semibold text-secondary">
+                Biar plagiasi kalian turun dan nilaipun jadi bagus
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Alasan end -->
+    </main>
+
+    <!-- footer start-->
+    <%- include('../../partials/footer.ejs') %>
+    <!-- footer end -->
+
+    <!-- script -->
+    <%- include('../../partials/script.ejs') %>
+    <!-- script -->
+  </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head start-->
+  <%- include('../../partials/head.ejs') %>
+  <!-- head end -->
+
+  <body>
+    <!-- header start-->
+    <%- include('../../partials/header.ejs') %>
+    <!-- header end -->
+
+    <!-- main -->
+    <main>
+      <div class="container mt-4 py-3 px-0">
+        <div class="row justify-content-center">
+          <div class="col-12 px-0 px-sm-3">
+            <div class="justify-content-center mx-auto mt-md-4">
+              <!-- container start -->
+              <div class="px-3 mb-4 shadow rounded">
+                <div class="row">
+                  <div class="col-12 px-0">
+                    <!-- top section start -->
+                    <div class="py-3">
+                      <div class="mb-0">
+                        <h5 class="mb-3 fw-bold">List Project</h5>
+
+                        <!-- search section -->
+                        <div
+                          class="row align-items-center justify-content-center"
+                        >
+                          <form
+                            action=""
+                            class="mb-3 col-6 col-md-5 col-lg-7 col-xxl-8 d-flex position-relative"
+                            role="search"
+                          >
+                            <input
+                              type="search"
+                              class="form-control me-2"
+                              placeholder="cari cuan"
+                            />
+                          </form>
+                          <div class="mb-3 col-6 col-md-3 col-lg-2">
+                            <select
+                              class="form-select"
+                              aria-label="Default select example"
+                            >
+                              <option value="1" disabled selected>
+                                Urutkan
+                              </option>
+                              <option value="2">Terbaru</option>
+                              <option value="3">Terlama</option>
+                            </select>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-secondary mb-3 col-12 col-md-auto col-lg-3 col-xxl-2 text-xxl-center"
+                          >
+                            Project Saya
+                          </button>
+                        </div>
+                        <!-- search section end -->
+                      </div>
+                    </div>
+                    <!-- top section end -->
+
+                    <!-- top nav section start -->
+                    <nav
+                      class="d-flex justify-content-end mt-3 pagination"
+                      aria-label="Page navigation example"
+                    >
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#"><<</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link active-custom" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">>></a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- top nav section end -->
+
+                    <!-- list job section start -->
+                    <div id="listjob-area">
+
+                    </div>
+                    <!-- list job section end -->
+
+                    <!-- bottom nav section start -->
+                    <nav
+                      class="d-flex justify-content-end mt-3 pagination"
+                      aria-label="Page navigation example"
+                    >
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#"><<</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link active-custom" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">>></a>
+                        </li>
+                      </ul>
+                    </nav>
+                    <!-- bottom nav section end -->
+                  </div>
+                </div>
+              </div>
+              <!-- container end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- script -->
+    <%- include('../../partials/script.ejs') %>
+    <!-- script -->
+  </body>
+</html>
