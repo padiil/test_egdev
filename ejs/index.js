@@ -6,12 +6,6 @@ app.set("view engine", "ejs");
 app.use(express.static("./public"));
 
 app.get("/", (req, res) => {
-  res.json({
-    message: "Hello World",
-  });
-});
-
-app.get("/home", (req, res) => {
   res.render("pages/home");
 });
 
